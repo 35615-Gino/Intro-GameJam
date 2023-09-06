@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - dot
   layers:
   - Default
   - TransparentFX
@@ -46,6 +47,9 @@ TagManager:
     locked: 0
   - name: line
     uniqueID: 1362094203
+    locked: 0
+  - name: dot
+    uniqueID: 448489501
     locked: 0
   - name: player
     uniqueID: 274877155

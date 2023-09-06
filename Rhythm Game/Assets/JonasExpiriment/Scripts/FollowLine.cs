@@ -35,7 +35,10 @@ public class FollowLine : MonoBehaviour
             }
 
             distanceAlongLine += distanceToMove;
-            transform.position = Vector3.Lerp(linePoints[currentPointIndex], linePoints[currentPointIndex + 1], distanceAlongLine / distanceToNextPoint);
+            if (distanceToNextPoint > 0)
+            {
+                transform.position = Vector3.Lerp(linePoints[currentPointIndex], linePoints[currentPointIndex + 1], distanceAlongLine / distanceToNextPoint);
+            }
         }
     }
 }
