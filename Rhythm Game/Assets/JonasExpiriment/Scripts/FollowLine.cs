@@ -19,11 +19,6 @@ public class FollowLine : MonoBehaviour
         if (!isMoving)
             return;
 
-        MoveTowardsNextPoint();
-    }
-
-    void MoveTowardsNextPoint()
-    {
         Vector3[] linePoints = new Vector3[lineRenderer.positionCount];
         lineRenderer.GetPositions(linePoints);
 
@@ -32,14 +27,11 @@ public class FollowLine : MonoBehaviour
             float distanceToNextPoint = Vector3.Distance(linePoints[currentPointIndex], linePoints[currentPointIndex + 1]);
             float distanceToMove = speed * Time.deltaTime;
 
-            while (distanceAlongLine + distanceToMove >= distanceToNextPoint)
+            if (distanceAlongLine + distanceToMove >= distanceToNextPoint)
             {
-                distanceToMove -= (distanceToNextPoint - distanceAlongLine);
-                distanceAlongLine = 0.0f;
-
+                distanceToMove = distanceToNextPoint - distanceAlongLine;
                 currentPointIndex++;
-
-                distanceToNextPoint = Vector3.Distance(linePoints[currentPointIndex], linePoints[currentPointIndex + 1]);
+                distanceAlongLine = 0.0f;
             }
 
             distanceAlongLine += distanceToMove;
