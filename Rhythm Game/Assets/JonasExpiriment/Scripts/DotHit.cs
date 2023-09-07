@@ -9,6 +9,7 @@ public class DotHit : MonoBehaviour
     private int currentScore = 0;
 
     public CameraPulse cameraPulse;
+    public GameObject prefabToAnimate;
 
     void Update()
     {
@@ -16,6 +17,7 @@ public class DotHit : MonoBehaviour
         {
             CalculateScore();
             cameraPulse.TriggerPulse();
+            ActivatePrefabAnimation();
         }
         if (Input.GetKeyDown(KeyCode.Space) && canHit == false)
         {
@@ -36,6 +38,16 @@ public class DotHit : MonoBehaviour
         if (other.CompareTag("dot"))
         {
             canHit = false;
+        }
+    }
+
+    void ActivatePrefabAnimation()
+    {
+        Animator prefabAnimator = prefabToAnimate.GetComponent<Animator>();
+        if (prefabAnimator != null)
+        {
+            // Trigger the animation
+            prefabAnimator.SetBool("ActivateAnimation", true); // Use the appropriate parameter name
         }
     }
 
