@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelScreen.unity
     guid: 3182c99ce3326154aa95a5e8784dd80f
+  - enabled: 1
+    path: Assets/Scenes/Jasper.unity
+    guid: 7548f0c11cb94984899823cc5ef69e50
+  - enabled: 1
+    path: Assets/Scenes/Gino.unity
+    guid: 4f432ca19d7b48348a38d866b1f9fdef
+  - enabled: 1
+    path: Assets/Scenes/Boris.unity
+    guid: cf98d7f07033ba14b8cdb9ab8aea432d
   m_configObjects: {}

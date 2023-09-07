@@ -23,4 +23,20 @@ public class ButtonPress : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Level()
+    {
+        SceneManager.LoadScene("Lijntester");
+    }
+    public void Level2()
+    {
+        SceneManager.LoadScene("Gino");
+    }
+    public void Level3()
+    {
+        SceneManager.LoadScene("Boris");
+    }
+    public void Level4()
+    {
+        SceneManager.LoadScene("Jasper");
+    }
 }
