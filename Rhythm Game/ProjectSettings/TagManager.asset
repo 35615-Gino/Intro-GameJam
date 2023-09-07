@@ -6,6 +6,7 @@ TagManager:
   tags:
   - dot
   - DotFX
+  - enableAnimator
   layers:
   - Default
   - TransparentFX

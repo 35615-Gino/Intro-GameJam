@@ -3,13 +3,16 @@ using UnityEngine;
 public class PlayAnim : MonoBehaviour
 {
     public GameObject anim;
-    public DotHit dotHit;
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && dotHit.canHit)
-        {
-            
-        }
+        DotHit dotHit = FindObjectOfType<DotHit>();
+        dotHit.OnCanHit += PlayAnimation;
+    }
+
+    private void PlayAnimation()
+    {
+        anim.GetComponent<Animator>().Play("dotfxnew");
+        Debug.Log("anim played");
     }
 }
