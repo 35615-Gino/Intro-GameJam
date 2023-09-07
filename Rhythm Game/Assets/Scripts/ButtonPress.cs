@@ -25,7 +25,7 @@ public class ButtonPress : MonoBehaviour
     }
     public void Level()
     {
-        SceneManager.LoadScene("Lijntester");
+        SceneManager.LoadScene("Lijntest");
     }
     public void Level2()
     {
