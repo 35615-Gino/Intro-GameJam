@@ -1,7 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class DotHit : MonoBehaviour
 {
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI accuracyText;
+
     public float hitRadius = 0.5f;
     public int maxScore = 1000;
 
@@ -10,6 +14,7 @@ public class DotHit : MonoBehaviour
 
     public CameraPulse cameraPulse;
     public GameObject prefabToAnimate;
+
 
     void Update()
     {
@@ -71,8 +76,8 @@ public class DotHit : MonoBehaviour
         float accuracy = Mathf.Clamp01(1 - (closestDistance / hitRadius));
         int score = Mathf.RoundToInt(accuracy * maxScore);
 
-        Debug.Log("Accuracy: " + accuracy);
-        Debug.Log("Score: " + score);
+        accuracyText.text = "Accuracy: " + accuracy.ToString();
+        scoreText.text = "Score: " + score.ToString();
 
         currentScore += score;
 
