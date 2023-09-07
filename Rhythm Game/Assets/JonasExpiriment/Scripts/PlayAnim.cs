@@ -2,29 +2,14 @@ using UnityEngine;
 
 public class PlayAnim : MonoBehaviour
 {
-    public string dotFXTag = "DotFX"; // Specify the tag here in the Inspector.
+    public GameObject anim;
+    public DotHit dotHit;
 
-    public void PlayDotFXAnimation()
+    private void Update()
     {
-        GameObject[] dotFXObjects = GameObject.FindGameObjectsWithTag(dotFXTag);
-
-        // Ensure at least one object with the specified tag exists
-        if (dotFXObjects.Length > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && dotHit.canHit)
         {
-            foreach (GameObject dotFXObject in dotFXObjects)
-            {
-                Animation anim = dotFXObject.GetComponent<Animation>();
-
-                // Play the animation by its name
-                if (anim != null)
-                {
-                    anim.Play("DotFXAnimation");
-                }
-            }
-        }
-        else
-        {
-            Debug.LogWarning("No objects with tag '" + dotFXTag + "' found.");
+            
         }
     }
 }
