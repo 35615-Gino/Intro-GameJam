@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//heel eerlijk dit is enige script die ik gwn had gevraagd aan chatgpt
 public class CameraPulse : MonoBehaviour
 {
     public float pulseDuration = 0.2f;

@@ -68,7 +68,7 @@ public class DotHit : MonoBehaviour
             cameraPulse.TriggerPulse();
             OnCanHit?.Invoke();
         }
-        if (score == 0)
+        if (score <= 0)
         {
             misses++;
             if(misses == maxMisses)

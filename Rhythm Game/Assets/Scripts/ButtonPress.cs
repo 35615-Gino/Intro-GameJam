@@ -29,7 +29,7 @@ public class ButtonPress : MonoBehaviour
     }
     public void Level2()
     {
-        SceneManager.LoadScene("Gino");
+        SceneManager.LoadScene("Jasper2");
     }
     public void Level3()
     {

@@ -16,10 +16,8 @@ public class PlaceDot : MonoBehaviour
     {
         if (prefabToSpawn != null)
         {
-            // Get the position of the current GameObject
             Vector3 spawnPosition = transform.position;
 
-            // Instantiate the prefab at the current position
             Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
         }
         else
