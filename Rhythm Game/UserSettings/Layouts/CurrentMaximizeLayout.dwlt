@@ -84,7 +84,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
       y: 21
       width: 880.4
       height: 422.8
-    m_Scale: {x: 0.48935184, y: 0.48935184}
+    m_Scale: {x: 0.5136574, y: 0.5136574}
     m_Translation: {x: 440.2, y: 211.4}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -105,12 +105,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -899.5573
-      y: -432
-      width: 1799.1146
-      height: 864
+      x: -856.9915
+      y: -411.55835
+      width: 1713.983
+      height: 823.1167
     m_MinimalGUI: 1
-  m_defaultScale: 0.48935184
+  m_defaultScale: 0.5136574
   m_LastWindowPixelSize: {x: 1100.5, y: 554.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -224,9 +224,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 36b10400
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6c87feff648bfefff28dfeffe08ffeffb090feff0895feffe896feff0ce4feff7cfaffff28fbffff60710000ee710000c87300003a7400004e7400006a740000ae740000bc7400009c7500000c7600003c7600001e7700004e770000ba7700001e780000527800003679000054790000ce7a0000b6040400d2040400dc040400
+      m_ExpandedIDs: 28fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -277,7 +277,7 @@ MonoBehaviour:
   - {fileID: 8}
   - {fileID: 9}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -771,23 +771,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Jasper
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Jasper
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\joons\source\repos\MyFirstUnityGame\BeginGameJam\Intro-GameJam\Rhythm
     Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 103}
-    m_SelectedIDs: 2eb10400
-    m_LastClickedID: 307502
-    m_ExpandedIDs: 00000000d07d0000d27d0000fe7d000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: fc720000
+    m_LastClickedID: 29436
+    m_ExpandedIDs: 00000000dc720000de72000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -815,7 +815,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d07d0000d27d000000ca9a3b
+    m_ExpandedIDs: 00000000dc720000de720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -840,9 +840,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 36b10400
-    m_LastClickedInstanceID: 307510
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000020bb0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
